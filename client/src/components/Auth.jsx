@@ -61,22 +61,33 @@ const Auth = () => {
         <div className='auth__form-container_fields-content'>
           <div
             className='amebo__chat'
-            style={{ display: 'flex', justifyContent: 'center' }}
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              position: 'relative',
+              margin: '1rem 0rem',
+              width: '80%',
+            }}
           >
             <img
               src={appLogo}
               alt='amebo'
-              width='70px'
-              height='70px'
-              style={{ marginTop: '50px', marginRight: '20px' }}
+              width='50px'
+              height='50px'
+              style={{
+                marginTop: '30px',
+                marginRight: '20px',
+                position: 'relative',
+              }}
             />
             <p
               className='amebo__chat-text'
               style={{
                 color: 'blue',
                 fontFamily: 'algerian',
-                fontSize: '50px',
+                fontSize: '30px',
                 textAlign: 'center',
+                position: 'relative',
               }}
             >
               AMEBO~CHAT
