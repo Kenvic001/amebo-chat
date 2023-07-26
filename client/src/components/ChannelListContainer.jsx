@@ -4,18 +4,20 @@ import { ChannelList, isChannel, useChatContext } from 'stream-chat-react';
 import { TeamChannelList, TeamChannelPreview, ChannelSearch } from './';
 import Cookies from 'universal-cookie';
 import { useState } from 'react';
+import appLogo from '../assets/amebo.png';
+import logOut from '../assets/logout.png';
 
 const cookies = new Cookies();
 const SideBar = ({ logout }) => (
   <div className='channel-list__sidebar'>
     <div className='channel-list__sidebar__icon1'>
       <div className='icon1__inner'>
-        <img src='./src/assets/amebo.png' alt='amebo' width='30px' />
+        <img src={appLogo} alt='amebo' width='30px' />
       </div>
     </div>
     <div className='channel-list__sidebar__icon2'>
       <div className='icon1__inner ' onClick={logout}>
-        <img src='./src/assets/logout.png' alt='logout' width='30px' />
+        <img src={logOut} alt='logout' width='30px' />
       </div>
     </div>
   </div>
