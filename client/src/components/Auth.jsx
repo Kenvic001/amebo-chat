@@ -4,6 +4,7 @@ import Cookies from 'universal-cookie';
 import axios from 'axios';
 
 import signinImage from '../assets/signup.jpg';
+import appLogo from '../assets/amebo.png';
 
 const cookies = new Cookies();
 
@@ -63,7 +64,7 @@ const Auth = () => {
             style={{ display: 'flex', justifyContent: 'center' }}
           >
             <img
-              src='./src/assets/amebo.png'
+              src={appLogo}
               alt='amebo'
               width='70px'
               height='70px'
