@@ -28,7 +28,7 @@ const Auth = () => {
 
     const { username, phoneNumber, password, avatarURL } = form;
 
-    const URL = 'http://localhost:5000/auth';
+    const URL = 'https://amebochat-api.onrender.com/auth';
 
     const {
       data: { token, userId, hashedPassword, fullName },
